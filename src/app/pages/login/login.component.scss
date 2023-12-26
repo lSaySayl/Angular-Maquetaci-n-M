@@ -1,0 +1,86 @@
+@import '../../../styles/variables.scss';
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $White;
+        border-radius: .8rem;
+        padding: 4rem;
+        box-shadow: 1rem 2rem 2rem rgba(66, 65, 65, 0.2);
+        height: 40rem;
+        width: 40rem;
+
+        &-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+
+        &-form {
+            .login__container-form-login {
+                .login__container-form-login-input {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    .login__container-form-login-input-icon {
+                        margin-right: 1rem;
+                        font-size: 1.5rem;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: .8rem;
+                        border: .1rem solid #ccc;
+                        border-radius: 4px;
+                    }
+                }
+
+                .login__container-form-login-button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: $primary;
+                    color: $White;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+            }
+        }
+
+        &-alert {
+            height: 2rem;
+            margin-top: 1rem;
+            padding: .5rem 0;
+
+            & span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+                height: 2rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 0, 0, 0.315);
+                color: rgba(255, 0, 0, 0.679);
+            }
+        }
+    }
+}
